@@ -2,13 +2,14 @@
 
 def fib():
     fibs = [1, 2]
-
+    x = 0
+    y = 0
+    num = 1
     for i in range(1,9):
-
-        ''' 
-        implement Fibonacci sequence to calculate the 
-        first 10 Fibonacci numbers, note Fn = Fn-1 + Fn-2
-        '''
+        if i == 0:
+            continue
+        else:
+            fibs.append(fibs[i-1] + fibs[i])
 
     return fibs
 
